@@ -1,8 +1,9 @@
 {
-  "beautify.ignore": [".html", ".js"],
+  "beautify.ignore": [".html", ".js", ".json"],
   "editor.formatOnSave": true,
   "html.format.enable": false,
+  "json.format.enable": false,
   "javascript.format.enable": false,
   "tslint.autoFixOnSave": true,
-  "prettier.disableLanguages": ["html", "js"]
+  "prettier.disableLanguages": ["html", "js", "json", "jsonc"]
 }
