@@ -5,13 +5,14 @@ import { NxModule } from '@nrwl/nx';
 
 import { SharedModule } from '@zemoga/shared';
 import { AppComponent } from './app.component';
+import { routes } from './app.routing';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserAnimationsModule,
     NxModule.forRoot(),
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     SharedModule
   ],
   providers: [],
