@@ -1,20 +1,46 @@
-<div style="text-align:center">
-  <h1>Welcome to {{ title }}!</h1>
-  <img
-    width="300"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-  />
-</div>
+<header>
+  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
+    <h1>Rule of Thumb.</h1>
 
-<h2>This is an Angular CLI app built with Nrwl Nx!</h2>
+    <nav>
+      <a href="#">Past Trials</a>
+      <a href="#">How It Works</a>
+      <a href="#">Log In / Sign Up</a>
+      <!-- search icon -->
+    </nav>
+  </div>
+</header>
 
-An open source toolkit for enterprise Angular applications. Nx is designed to
-help you create and build enterprise grade Angular applications. It provides an
-opinionated approach to application project structure and patterns.
+<main>
+  <div class="container" fxLayout="column">
 
-<h2>Quick Start & Documentation</h2>
+    <!-- featured trial -->
 
-<a href="https://nrwl.io/nx"
-  >Watch a 5-minute video on how to get started with Nx.</a
->
-<router-outlet></router-outlet>
+    <img class="banner1" src="/assets/banner1.png" />
+
+    <router-outlet></router-outlet>
+
+    <div class="banner2" fxLayout="row" fxLayoutAlign="space-between center">
+      <span>Is there anyone else you would want us to add?</span>
+      <span>Submit a Name</span>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container" fxLayout="row">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <ul fxLayout="row" fxLayoutGap="28px">
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <ul fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <li><span>Follow Us</span></li>
+        <li><a href="#"><i class="fab fa-2x fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-2x fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
