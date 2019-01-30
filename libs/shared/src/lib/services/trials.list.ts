@@ -1,6 +1,9 @@
-export const list = [{
+export const list = [
+  {
     name: 'Kanye West',
-    description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+    image: 'kanye.png',
+    description:
+      'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
     category: 'Entertainment',
     date: '15 days ago', // TODO moment pipe
     votes: {
@@ -11,7 +14,9 @@ export const list = [{
   },
   {
     name: 'Mark Zuckerberg',
-    description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+    image: 'mark.png',
+    description:
+      'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
     category: 'Business',
     date: '1 month ago', // TODO moment pipe
     votes: {
@@ -22,7 +27,9 @@ export const list = [{
   },
   {
     name: 'Cristina Fernández de Kirchner',
-    description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+    image: 'kirchner.png',
+    description:
+      'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
     category: 'Politics',
     date: '2 months ago', // TODO moment pipe
     votes: {
@@ -33,7 +40,9 @@ export const list = [{
   },
   {
     name: 'Malala Yousafzai',
-    description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+    image: 'malala.png',
+    description:
+      'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
     category: 'Peace',
     date: '3 months ago', // TODO moment pipe
     votes: {
