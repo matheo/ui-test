@@ -1,10 +1,16 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  ChangeDetectionStrategy
+} from '@angular/core';
 import { TrialVotes } from '../../model';
 
 @Component({
   selector: 'zemoga-vote-results',
   templateUrl: './vote-results.component.html',
-  styleUrls: ['./vote-results.component.scss']
+  styleUrls: ['./vote-results.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class VoteResultsComponent implements OnChanges {
   @Input()
