@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrialsService } from '@zemoga/shared';
 
 @Component({
   selector: 'zemoga-votes',
@@ -6,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./votes.component.scss']
 })
 export class VotesComponent implements OnInit {
+  constructor(public trials: TrialsService) {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

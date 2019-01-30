@@ -1,1 +1,5 @@
 <h2>Votes</h2>
+
+<ng-container *ngFor="let row of trials.getTrials() | async">
+  <zemoga-trial-summary [trial]="row"></zemoga-trial-summary>
+</ng-container>
