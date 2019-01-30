@@ -1,4 +1,6 @@
 <div>
+  <zemoga-vote-icon [value]="trial.votes.pro - trial.votes.con"></zemoga-vote-icon>
+
   <h3>{{ trial.name }}</h3>
 
   <span>
@@ -6,6 +8,11 @@
   </span>
 
   <p>{{ trial.description }}</p>
+
+  <div>
+    <zemoga-vote-icon value="1"></zemoga-vote-icon>
+    <zemoga-vote-icon value="-1"></zemoga-vote-icon>
+  </div>
 </div>
 
 <zemoga-vote-results

@@ -1,0 +1,10 @@
+<ng-container *ngIf="value >= 0 then up; else down">
+</ng-container>
+
+<ng-template #up>
+  <i class="fas fa-thumbs-up"></i>
+</ng-template>
+
+<ng-template #down>
+  <i class="fas fa-thumbs-down"></i>
+</ng-template>
