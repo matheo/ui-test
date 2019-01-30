@@ -19,11 +19,22 @@
       margin-right: 0 !important;
     }
   }
-}
 
-h3 {
-  position: absolute;
-  bottom: 0;
+  // content
+  > div {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    right: 80px;
 
-  color: #ffffff;
+    color: #ffffff;
+
+    h3 {
+      font-size: 44px;
+    }
+
+    span {
+      font-size: 90%;
+    }
+  }
 }
