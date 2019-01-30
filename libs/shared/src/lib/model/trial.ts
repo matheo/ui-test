@@ -11,10 +11,12 @@ export interface Trial {
   expiry?: string;
 }
 
+export interface TrialVotes {
+  voted: boolean;
+  pro: number;
+  con: number;
+}
+
 export interface TrialItem extends Trial {
-  votes: {
-    voted: boolean;
-    pro: number;
-    con: number;
-  };
+  votes: TrialVotes;
 }

@@ -1,0 +1,37 @@
+:host {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -1px;
+  height: 50px;
+
+  > div {
+    height: 50px;
+  }
+
+  div {
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 50px;
+  }
+
+  .fas {
+    font-size: 26px;
+  }
+}
+
+.votes-pro {
+  background: rgba(28, 187, 180, 0.75);
+  padding-left: 10px;
+}
+
+.votes-con {
+  background: rgba(255, 173, 29, 0.75);
+  padding-right: 10px;
+  text-align: right;
+
+  .fas {
+    margin-left: 5px;
+  }
+}

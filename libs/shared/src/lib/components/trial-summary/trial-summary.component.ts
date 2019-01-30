@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, HostBinding } from '@angular/core';
-import { Trial } from '../../model';
+import { TrialItem } from '../../model';
 
 @Component({
   selector: 'zemoga-trial-summary',
@@ -7,7 +7,7 @@ import { Trial } from '../../model';
   styleUrls: ['./trial-summary.component.scss']
 })
 export class TrialSummaryComponent implements OnInit {
-  @Input() trial: Trial;
+  @Input() trial: TrialItem;
 
   @HostBinding('style.background-image')
   background: string;
