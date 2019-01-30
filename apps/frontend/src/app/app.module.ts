@@ -13,7 +13,7 @@ import { routes } from './app.routing';
     BrowserAnimationsModule,
     NxModule.forRoot(),
     RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
-    SharedModule
+    SharedModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
