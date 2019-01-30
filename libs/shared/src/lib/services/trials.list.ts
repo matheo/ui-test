@@ -1,4 +1,6 @@
-export const list = [
+import { TrialItem } from '../model';
+
+export const list: Array<TrialItem> = [
   {
     name: 'Kanye West',
     image: 'kanye.png',

@@ -1,4 +1,6 @@
-export const featured = {
+import { Trial } from '../model';
+
+export const featured: Trial = {
   name: 'Pope Francis',
   image: 'pope.png',
   description:
