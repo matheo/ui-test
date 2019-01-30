@@ -2,7 +2,7 @@
 
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="4%">
 
-  <zemoga-trial-summary fxFlex="48" fxFlex.xs="100"
+  <zemoga-trial-summary fxFlex="48" fxFlex.lt-md="100"
     *ngFor="let row of trials.getTrials() | async"
     [trial]="row"
   ></zemoga-trial-summary>

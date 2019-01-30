@@ -10,8 +10,14 @@
   background-position: center;
   background-size: cover;
 
-  &:nth-child(even) {
+  @media #{$lt-sm} {
     margin-right: 0 !important;
+  }
+
+  @media #{$gt-md} {
+    &:nth-child(even) {
+      margin-right: 0 !important;
+    }
   }
 }
 
