@@ -1,0 +1,23 @@
+@import 'variables';
+
+:host {
+  display: block;
+  position: relative;
+  padding-top: (550/490) * 50%;
+  margin-bottom: $content-padding;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:nth-child(even) {
+    margin-right: 0 !important;
+  }
+}
+
+h3 {
+  position: absolute;
+  bottom: 0;
+
+  color: #ffffff;
+}

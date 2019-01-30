@@ -1,5 +1,9 @@
 <h2>Votes</h2>
 
-<ng-container *ngFor="let row of trials.getTrials() | async">
-  <zemoga-trial-summary [trial]="row"></zemoga-trial-summary>
-</ng-container>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="4%">
+
+  <zemoga-trial-summary fxFlex="48" fxFlex.xs="100"
+    *ngFor="let row of trials.getTrials() | async"
+    [trial]="row"
+  ></zemoga-trial-summary>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { Trial } from '../../model';
 
 @Component({
@@ -9,7 +9,12 @@ import { Trial } from '../../model';
 export class TrialSummaryComponent implements OnInit {
   @Input() trial: Trial;
 
+  @HostBinding('style.background-image')
+  background: string;
+
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.background = `url('./assets/trials/${this.trial.image}')`;
+  }
 }
