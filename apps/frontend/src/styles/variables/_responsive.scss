@@ -1,27 +1,28 @@
 /* Responsive Config */
 
 // Extra small screen
-$xs-max: 600px !default;
+$xs-max: 599.99px !default;
 // Small screen / tablet
-$sm-max: 768px !default;
+$sm-max: 959.99px !default;
 // Medium screen / desktop
-$md-max: 992px !default;
+$md-max: 1279.99px !default;
 // Large screen / wide desktop
-$lg-max: 1280px !default;
+$lg-max: 1919.99px !default;
 
-$sm-min: ($xs-max + 1);
-$md-min: ($sm-max + 1);
-$lg-min: ($md-max + 1);
-$xl-min: ($lg-max + 1);
+$sm-min: ($xs-max + 0.01);
+$md-min: ($sm-max + 0.01);
+$lg-min: ($md-max + 0.01);
+$xl-min: ($lg-max + 0.01);
 
-$gte-sm: 'only screen and (min-width : #{$sm-min})';
-$gte-md: 'only screen and (min-width : #{$md-min})';
-$gte-lg: 'only screen and (min-width : #{$lg-min})';
-$gte-xl: 'only screen and (min-width : #{$xl-min})';
-$lte-xs: 'only screen and (max-width : #{$xs-max})';
-$lte-sm: 'only screen and (max-width : #{$sm-max})';
-$lte-md: 'only screen and (max-width : #{$md-max})';
-$lte-lg: 'only screen and (max-width : #{$lg-max})';
+$gt-sm: 'only screen and (min-width : #{$sm-min})';
+$gt-md: 'only screen and (min-width : #{$md-min})';
+$gt-lg: 'only screen and (min-width : #{$lg-min})';
+$gt-xl: 'only screen and (min-width : #{$xl-min})';
+$lt-xs: 'only screen and (max-width : #{$xs-max})';
+$lt-sm: 'only screen and (max-width : #{$sm-max})';
+$lt-md: 'only screen and (max-width : #{$md-max})';
+$lt-lg: 'only screen and (max-width : #{$lg-max})';
+$lt-xl: 'only screen and (max-width : #{$lg-max})';
 $eq-sm: 'only screen and (min-width : #{$sm-min}) and (max-width : #{$sm-max})';
 $eq-md: 'only screen and (min-width : #{$md-min}) and (max-width : #{$md-max})';
 $eq-lg: 'only screen and (min-width : #{$lg-min}) and (max-width : #{$lg-max})';
