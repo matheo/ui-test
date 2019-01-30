@@ -40,11 +40,21 @@ main {
     font-size: 26px;
     font-weight: 200;
     margin-top: $content-padding;
-    padding: 0 35px;
+    padding: 0 25px 0 20px;
 
     position: relative;
     height: 80px;
     z-index: 1;
+
+    a {
+      border: 3px solid black;
+      color: black;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 10px 35px;
+      text-decoration: none;
+    }
 
     &::before {
       content: "";
