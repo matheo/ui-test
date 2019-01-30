@@ -11,7 +11,7 @@ export const list: Array<TrialItem> = [
     votes: {
       voted: false,
       pro: 18,
-      con: 32
+      con: 52
     }
   },
   {
