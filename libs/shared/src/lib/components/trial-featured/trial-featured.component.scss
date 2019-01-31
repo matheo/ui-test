@@ -10,7 +10,7 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .question {
@@ -33,6 +33,15 @@
   left: $grid-left;
   width: 420px;
   z-index: 1;
+
+  @media #{$lt-md} {
+    position: relative;
+    left: 0;
+
+    margin: 0 auto;
+    max-width: 420px;
+    width: auto;
+  }
 
   color: white;
   padding: 35px;

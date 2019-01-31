@@ -4,6 +4,14 @@
   margin: 0 auto;
   padding: 0 $grid-right 0 $grid-left;
 
+  @media #{$lt-md} {
+    padding: 0 30px;
+  }
+
+  @media #{$lt-sm} {
+    padding: 0 20px;
+  }
+
   height: 100%;
   width: 100%;
 
@@ -39,8 +47,12 @@ main {
   .banner2 {
     font-size: 26px;
     font-weight: 200;
-    margin-top: $content-padding;
     padding: 0 25px 0 20px;
+
+    @media #{$lt-md} {
+      font-size: 22px;
+      padding: 0 15px;
+    }
 
     position: relative;
     height: 80px;
@@ -53,7 +65,13 @@ main {
       font-size: 20px;
       font-weight: 500;
       padding: 10px 35px;
+      text-align: center;
       text-decoration: none;
+
+      @media #{$lt-lg} {
+        margin-left: 15px;
+        padding: 5px 15px;
+      }
     }
 
     &::before {
