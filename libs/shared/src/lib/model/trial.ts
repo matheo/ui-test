@@ -3,12 +3,14 @@
  */
 
 export interface Trial {
+  id: string;
   name: string;
   image: string;
   description: string;
   category: string;
   date: string;
   expiry?: string;
+  featured?: boolean;
 }
 
 export interface TrialVotes {

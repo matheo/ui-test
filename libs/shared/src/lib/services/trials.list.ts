@@ -2,6 +2,23 @@ import { TrialItem } from '../model';
 
 export const list: Array<TrialItem> = [
   {
+    id: '5',
+    name: 'Pope Francis',
+    image: 'pope.png',
+    description:
+      "He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)",
+    category: 'Society',
+    date: '3 days ago', // TODO moment pipe
+    expiry: '22 days', // TODO moment pipe
+    featured: true,
+    votes: {
+      voted: false,
+      pro: 1,
+      con: 1
+    }
+  },
+  {
+    id: '4',
     name: 'Kanye West',
     image: 'kanye.png',
     description:
@@ -15,6 +32,7 @@ export const list: Array<TrialItem> = [
     }
   },
   {
+    id: '3',
     name: 'Mark Zuckerberg',
     image: 'mark.png',
     description:
@@ -28,6 +46,7 @@ export const list: Array<TrialItem> = [
     }
   },
   {
+    id: '2',
     name: 'Cristina Fernández de Kirchner',
     image: 'kirchner.png',
     description:
@@ -41,6 +60,7 @@ export const list: Array<TrialItem> = [
     }
   },
   {
+    id: '1',
     name: 'Malala Yousafzai',
     image: 'malala.png',
     description:

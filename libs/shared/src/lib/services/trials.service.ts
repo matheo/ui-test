@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 
-import { featured } from './trials.featured';
 import { list } from './trials.list';
 
 @Injectable({
@@ -11,10 +10,10 @@ export class TrialsService {
   constructor() {}
 
   getFeatured() {
-    return of(featured);
+    return of(list.filter(row => row.featured)[0]);
   }
 
   getTrials() {
-    return of(list);
+    return of(list.filter(row => !row.featured));
   }
 }
