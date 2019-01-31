@@ -44,10 +44,9 @@
   }
 
   color: white;
-  padding: 35px;
+  padding: 35px 35px 0;
 
-  strong {
-    display: block;
+  h2 {
     font-size: 50px;
     font-weight: normal;
   }
@@ -57,8 +56,65 @@
     font-weight: 200;
   }
 
+  > .fab {
+    font-size: 80%;
+    margin-right: 0.4em;
+  }
+
   a {
     color: white;
     font-size: 90%;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0;
+  }
+
+  > div {
+    margin: 0 -35px;
+
+    button {
+      border: none;
+      color: white;
+      font-size: 40px;
+      height: 80px;
+
+      &:first-child {
+        background: rgba(28, 187, 180, 0.5);
+      }
+
+      &:last-child {
+        background: rgba(255, 173, 29, 0.5);
+      }
+    }
+  }
+}
+
+.closing {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  span {
+    line-height: 50px;
+
+    &:first-child {
+      background: rgba(0, 0, 0, 0.35);
+      color: white;
+      font-size: 90%;
+      padding-right: 10px;
+      text-align: right;
+    }
+
+    &:last-child {
+      background: rgba(255, 255, 255, 0.75);
+      color: #464646;
+      font-size: 36px;
+      font-weight: 200;
+      padding-left: 15px;
+    }
   }
 }

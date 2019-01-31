@@ -16,6 +16,9 @@ export class VoteIconComponent implements OnChanges {
   @Input()
   value: number;
 
+  @Input()
+  opacity = 1;
+
   @HostBinding('style.background')
   background: string;
 
@@ -23,9 +26,9 @@ export class VoteIconComponent implements OnChanges {
 
   ngOnChanges() {
     if (this.value >= 0) {
-      this.background = `rgba(28, 187, 180, 1)`;
+      this.background = `rgba(28, 187, 180, ${this.opacity})`;
     } else {
-      this.background = `rgba(255, 173, 29, 1)`;
+      this.background = `rgba(255, 173, 29, ${this.opacity})`;
     }
   }
 }

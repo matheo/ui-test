@@ -1,8 +1,25 @@
 <div class="question">
   What's your opinion on
-  <strong>{{ trial.name }}?</strong>
+  <h2>{{ trial.name }}?</h2>
 
   <p>{{ trial.description }}</p>
 
-  <a href="#">More information</a>
+  <i class="fab fa-wikipedia-w"></i> <a href="#">More information</a>
+
+  <h3>What's Your Veredict?</h3>
+
+  <div fxLayout="row">
+    <button fxFlex="50" type="button">
+      <zemoga-vote-icon value="1" opacity="0"></zemoga-vote-icon>
+    </button>
+    <button fxFlex="50" type="button">
+      <zemoga-vote-icon value="-1" opacity="0"></zemoga-vote-icon>
+    </button>
+  </div>
+
+</div>
+
+<div class="closing" fxLayout="row" fxLayout=" stretch">
+  <span fxFlex="33">CLOSING IN</span>
+  <span fxFlex>{{ trial.expiry }}</span>
 </div>
