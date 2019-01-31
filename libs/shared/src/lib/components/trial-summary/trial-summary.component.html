@@ -10,8 +10,23 @@
   <p>{{ trial.description }}</p>
 
   <div>
-    <zemoga-vote-icon value="1"></zemoga-vote-icon>
-    <zemoga-vote-icon value="-1"></zemoga-vote-icon>
+    <ng-container *ngIf="trial.votes.voted then voted; else vote"></ng-container>
+
+    <ng-template #vote>
+      <zemoga-vote-icon value="1"
+        [class.selected]="selected === 'pro'"
+        (click)="selected = 'pro'"
+      ></zemoga-vote-icon>
+      <zemoga-vote-icon value="-1"
+        [class.selected]="selected === 'con'"
+        (click)="selected = 'con'"
+       ></zemoga-vote-icon>
+      <button type="button" [attr.disabled]="selected ? null : ''" (click)="doVote()">Vote now</button>
+    </ng-template>
+
+    <ng-template #voted>
+      <button type="button" (click)="trial.votes.voted = false">Vote again</button>
+    </ng-template>
   </div>
 </div>
 

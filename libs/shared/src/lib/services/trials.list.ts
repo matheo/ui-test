@@ -27,8 +27,8 @@ export const list: Array<TrialItem> = [
     date: '15 days ago', // TODO moment pipe
     votes: {
       voted: false,
-      pro: 18,
-      con: 52
+      pro: 9,
+      con: 26
     }
   },
   {
@@ -41,8 +41,8 @@ export const list: Array<TrialItem> = [
     date: '1 month ago', // TODO moment pipe
     votes: {
       voted: true,
-      pro: 36,
-      con: 64
+      pro: 9,
+      con: 16
     }
   },
   {
@@ -55,8 +55,8 @@ export const list: Array<TrialItem> = [
     date: '2 months ago', // TODO moment pipe
     votes: {
       voted: false,
-      pro: 76,
-      con: 24
+      pro: 19,
+      con: 6
     }
   },
   {
@@ -69,8 +69,8 @@ export const list: Array<TrialItem> = [
     date: '3 months ago', // TODO moment pipe
     votes: {
       voted: false,
-      pro: 67,
-      con: 33
+      pro: 17,
+      con: 7
     }
   }
 ];

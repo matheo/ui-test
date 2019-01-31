@@ -52,12 +52,27 @@
       font-size: 80%;
     }
 
-    div zemoga-vote-icon {
-      padding: 4px 6px;
-      margin-right: 10px;
+    div {
+      zemoga-vote-icon {
+        border: 2px solid transparent;
+        padding: 4px 6px;
+        margin-right: 10px;
 
-      &:first-child {
-        border: 2px solid white;
+        &.selected {
+          border: 2px solid white;
+        }
+      }
+
+      button {
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 7px;
+
+        &[disabled] {
+          border-color: gray;
+          color: gray;
+        }
       }
     }
   }

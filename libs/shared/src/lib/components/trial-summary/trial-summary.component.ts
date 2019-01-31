@@ -9,6 +9,8 @@ import { TrialItem } from '../../model';
 export class TrialSummaryComponent implements OnInit {
   @Input() trial: TrialItem;
 
+  selected: 'pro' | 'con';
+
   @HostBinding('style.background-image')
   background: string;
 
@@ -16,5 +18,22 @@ export class TrialSummaryComponent implements OnInit {
 
   ngOnInit() {
     this.background = `url('./assets/trials/${this.trial.image}')`;
+  }
+
+  doVote() {
+    if (this.selected === 'pro') {
+      this.trial.votes = {
+        voted: true,
+        pro: this.trial.votes.pro + 1,
+        con: this.trial.votes.con
+      };
+    } else {
+      this.trial.votes = {
+        voted: true,
+        pro: this.trial.votes.pro,
+        con: this.trial.votes.con + 1
+      };
+    }
+    this.selected = undefined;
   }
 }
