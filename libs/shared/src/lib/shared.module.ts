@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
+  BannerCountedComponent,
+  BannerProposeComponent,
   TrialFeaturedComponent,
   TrialSummaryComponent,
   VoteIconComponent,
@@ -17,13 +19,17 @@ import { TrialsService } from './services';
     TrialSummaryComponent,
     TrialFeaturedComponent,
     VoteResultsComponent,
-    VoteIconComponent
+    VoteIconComponent,
+    BannerCountedComponent,
+    BannerProposeComponent
   ],
   declarations: [
     TrialSummaryComponent,
     TrialFeaturedComponent,
     VoteResultsComponent,
-    VoteIconComponent
+    VoteIconComponent,
+    BannerCountedComponent,
+    BannerProposeComponent
   ]
 })
 export class SharedModule {
