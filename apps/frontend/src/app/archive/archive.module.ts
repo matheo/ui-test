@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ArchiveComponent } from './archive.component';
 import { ArchiveRoutingModule } from './archive-routing.module';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    ArchiveRoutingModule
-  ]
+  declarations: [ArchiveComponent],
+  imports: [CommonModule, ArchiveRoutingModule]
 })
-export class ArchiveModule { }
+export class ArchiveModule {}
